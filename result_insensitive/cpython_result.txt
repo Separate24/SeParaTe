@@ -1,0 +1,583 @@
+
+*********CallGraph Stats***************
+################ (program : python.bc)###############
+-------------------------------------------------------
+TotalNode           13026
+TotalEdge           115722
+TotalCycle          35
+MaxNodeInCycle      5245
+NodeInCycle         5324
+CalRetPairInCycle   59466
+#######################################################
+
+*********General Stats***************
+################ (program : python.bc)###############
+ConstantObj         0
+TotalPointers       1254496
+TotalObjects        98331
+TotalFieldObjects   10087
+MaxStructSize       6126
+TotalSVFStmts       1273667
+TotalPTASVFStmts    749019
+FIObjNum            3864
+FSObjNum            94466
+AddrsNum            113912
+LoadsNum            303439
+StoresNum           197758
+CopysNum            64885
+GepsNum             154927
+CallsNum            111402
+ReturnsNum          44723
+FunctionObjs        13026
+GlobalObjs          1829
+HeapObjs            56
+StackObjs           83413
+VarStructObj        2048
+VarArrayObj         553
+ConstStructObj      818
+ConstArrayObj       793
+NonPtrObj           35878
+IndCallSites        1605
+TotalCallSite       67176
+BBWith2Succ         68938
+BBWith3Succ         338
+-------------------------------------------------------
+LLVMIRTime          12.646
+SymbolTableTime     3.432
+SVFIRTime           21.994
+#######################################################
+
+*********Constraint Graph Stats***************
+################ (program : python.bc)###############
+-------------------------------------------------------
+AvgIn/OutCopyEdge   0.904872
+AvgIn/OutLoadEdge   0.335499
+AvgIn/OutAddrEdge   0.159866
+AvgIn/OutEdge       1.58046
+LocalVarInRecur     14318
+NumOfCGNode         1360307
+TotalValidNode      600141
+TotalValidObjNode   87011
+NumOfCGEdge         852556
+NumOfAddrs          95942
+NumOfCopys          391645
+NumOfGeps           151406
+NumOfLoads          201347
+NumOfStores         108158
+MaxInCopyEdge       18391
+MaxOutCopyEdge      49446
+MaxInLoadEdge       17548
+MaxOutLoadEdge      922
+MaxInStoreEdge      720
+MaxOutStoreEdge     16131
+AvgIn/OutStoreEdge  0
+MaxInAddrEdge       1
+MaxOutAddrEdge      11928
+#######################################################
+
+*********Andersen Pointer Analysis Stats***************
+################ (program : python.bc)###############
+-------------------------------------------------------
+TotalTime           1639.3
+CollapseTime        10.059
+SCCDetectTime       37.538
+SCCMergeTime        10.921
+LoadStoreTime       222.927
+CopyGepTime         1308.77
+UpdateCGTime        1.305
+AvgPtsSetSize       782.968
+AvgTopLvlPtsSize    1725.95
+Pointers            1251308
+TotalPointers       1254496
+TotalObjects        108418
+IndCallSites        1605
+AddrProcessed       110249
+CopyProcessed       1436605
+GepProcessed        363858
+LoadProcessed       55661957
+StoreProcessed      16836237
+NumOfSFRs           0
+NumOfFieldExpand    0
+MemObjects          98331
+DummyFieldPtrs      3188
+FieldObjs           10087
+MaxPtsSetSize       3345
+SolveIterations     14
+IndEdgeSolved       50000
+NumOfSCCDetect      14
+TotalCycleNum       709
+TotalPWCCycleNum    108
+NodesInCycles       9385
+MaxNodesInSCC       842
+NullPointer         3132
+PointsToConstPtr    63909
+PointsToBlkPtr      0
+#######################################################
+
+****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
+################ (program : python.bc)###############
+UniquePointsToSets       167180
+TotalUnions              2371816
+PropertyUnions           982221
+UniqueUnions             31850
+LookupUnions             1298190
+PreemptiveUnions         59555
+TotalComplements         19651336
+PropertyComplements      18428948
+UniqueComplements        34056
+LookupComplements        1154280
+PreemptiveComplements    34052
+TotalIntersections       1182309
+PropertyIntersections    1114109
+UniqueIntersections      21
+LookupIntersections      60
+PreemptiveIntersections  68119
+#######################################################
+Mod Ref (collectModRefForCall): 1897.01
+
+*********Memory SSA Statistics***************
+################ (program : python.bc)###############
+-------------------------------------------------------
+TotalMSSATime       4645.39
+GenRegionTime       4607.53
+GenMRStep1Time      0
+GenMRStep2Time      0
+-CollectGlobTime    41.056
+-CollectMR4CallTime 3976.82
+-CollectMR4LSTime   66.415
+-PartitionMRsTime   23.374
+-UpdateAliasMRTime  499.827
+--CollectCSPtsTime  2059.87
+--MRAnalysisTime    0
+GenMUCHITime        27.243
+InsertPHITime       8.16
+SSARenameTime       2.387
+AverageRegSize      16.818
+MaxRegSize          3150
+MemRegions          65180
+FunEntryChi         112902
+FunRetMu            112814
+CSChiNode           132211
+CSMuNode            248500
+LoadMuNode          233579
+StoreChiNode        103969
+FunHasEntryChi      12253
+FunHasRetMu         12588
+CSHasChi            35555
+CSHasMu             52700
+LoadHasMu           209525
+StoreHasChi         95280
+BBHasMSSAPhi        22487
+MSSAPhi             158675
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : python.bc)###############
+-------------------------------------------------------
+TotalTime           109.564
+ConnDirEdgeTime     0
+ConnIndEdgeTime     38.135
+TLNodeTime          0
+ATNodeTime          7.453
+OptTime             0
+AvgWeight           417.604
+MSSAPhi             158675
+TotalNode           1548336
+FormalIn            112902
+FormalOut           112814
+FormalParam         20504
+FormalRet           6466
+ActualIn            248500
+ActualOut           132211
+ActualParam         94166
+ActualRet           25380
+Addr                110249
+Copy                36210
+Gep                 154927
+PHI                 7335
+TotalEdge           2045195
+DirectEdge          531042
+IndirectEdge        1514153
+IndirectEdgeLabels  632316709
+IndCallEdge         281343
+IndRetEdge          146966
+DirectCallEdge      87296
+DirectRetEdge       25006
+AvgInDegree         1
+AvgOutDegree        1
+MaxInDegree         16003
+MaxOutDegree        23499
+AvgIndInDeg         1
+AvgIndOutDeg        2
+MaxIndInDeg         16003
+MaxIndOutDeg        4868
+Load                209528
+Store               118468
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : python.bc)###############
+-------------------------------------------------------
+TotalTime           148.078
+ConnDirEdgeTime     0
+ConnIndEdgeTime     38.135
+TLNodeTime          0
+ATNodeTime          7.453
+OptTime             0
+AvgWeight           449.139
+MSSAPhi             158675
+TotalNode           1548336
+FormalIn            112902
+FormalOut           112814
+FormalParam         20504
+FormalRet           6466
+ActualIn            248500
+ActualOut           132211
+ActualParam         94166
+ActualRet           25380
+Addr                110249
+Copy                36210
+Gep                 154927
+PHI                 7335
+TotalEdge           2651558
+DirectEdge          643148
+IndirectEdge        2008410
+IndirectEdgeLabels  902055373
+IndCallEdge         584478
+IndRetEdge          338088
+DirectCallEdge      174300
+DirectRetEdge       50108
+AvgInDegree         1
+AvgOutDegree        1
+MaxInDegree         16003
+MaxOutDegree        23499
+AvgIndInDeg         2
+AvgIndOutDeg        2
+MaxIndInDeg         16003
+MaxIndOutDeg        4868
+Load                209528
+Store               118468
+#######################################################
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 402, "cl": 20, "fl": "../Modules/_io/clinic/_iomodule.c.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 210, "cl": 9, "fl": "../Modules/_collectionsmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 16097, "cl": 16, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1249, "cl": 10, "fl": "../Objects/stringlib/unicode_format.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 14677, "cl": 12, "fl": "../Objects/unicodeobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7011, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 781, "cl": 11, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 794, "cl": 13, "fl": "../Python/errors.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 14159, "cl": 24, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 3236, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1062, "cl": 5, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 590, "cl": 13, "fl": "../Parser/pegen.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1520, "cl": 13, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 348, "cl": 11, "fl": "../Objects/fileobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1394, "cl": 13, "fl": "../Python/pytime.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 5583, "cl": 24, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11594, "cl": 29, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1552, "cl": 9, "fl": "../Python/initconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 197, "cl": 13, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 164, "cl": 17, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 846, "cl": 28, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 244, "cl": 22, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 892, "cl": 9, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7012, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7114, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 544, "cl": 5, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1650, "cl": 21, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1182, "cl": 17, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 653, "cl": 5, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 101, "cl": 13, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8450, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 334, "cl": 31, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 13411, "cl": 24, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 282, "cl": 15, "fl": "../Python/ceval_gil.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 382, "cl": 31, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 15946, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9681, "cl": 25, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1364, "cl": 5, "fl": "../Python/pytime.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 50, "cl": 13, "fl": "../Include/internal/pycore_pymath.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 551, "cl": 28, "fl": "../Python/preconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 893, "cl": 28, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 10805, "cl": 24, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9644, "cl": 25, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2002, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 747, "cl": 33, "fl": "../Modules/_io/bufferedio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1547, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 15939, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7059, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 118, "cl": 18, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 826, "cl": 9, "fl": "../Modules/faulthandler.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6912, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 16277, "cl": 22, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7098, "cl": 21, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 421, "cl": 9, "fl": "../Modules/main.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 3508, "cl": 54, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 309, "cl": 9, "fl": "../Python/pystrtod.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6923, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 412, "cl": 25, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6963, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1527, "cl": 32, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6964, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 5607, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6977, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7019, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 897, "cl": 9, "fl": "../Python/errors.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 5577, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 4356, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 4416, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 259, "cl": 5, "fl": "../Python/mystrtoul.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1727, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 4072, "cl": 29, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9197, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 338, "cl": 62, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 464, "cl": 13, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 665, "cl": 11, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8445, "cl": 23, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1950, "cl": 13, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 952, "cl": 36, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 892, "cl": 17, "fl": "../Python/errors.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 887, "cl": 11, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2214, "cl": 13, "fl": "../Modules/timemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11267, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7031, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 375, "cl": 9, "fl": "../Modules/timemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 407, "cl": 5, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1761, "cl": 26, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 409, "cl": 18, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1238, "cl": 13, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 332, "cl": 22, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 3262, "cl": 11, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 140, "cl": 15, "fl": "../Python/parking_lot.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7060, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 211, "cl": 9, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 14557, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8333, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 150, "cl": 17, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 398, "cl": 80, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11360, "cl": 23, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2129, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1980, "cl": 18, "fl": "../Modules/_io/bufferedio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 13375, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 451, "cl": 13, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7131, "cl": 21, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 363, "cl": 11, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 656, "cl": 33, "fl": "../Python/preconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 245, "cl": 5, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1393, "cl": 13, "fl": "../Python/pytime.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6976, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 349, "cl": 22, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 409, "cl": 9, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 3636, "cl": 28, "fl": "../Objects/typeobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 756, "cl": 15, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 398, "cl": 61, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7914, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 594, "cl": 9, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 917, "cl": 5, "fl": "../Python/preconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7096, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8149, "cl": 18, "fl": "../Python/Python-ast.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 127, "cl": 9, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7018, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 55, "cl": 9, "fl": "../Include/internal/pycore_pymath.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 160, "cl": 17, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2861, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11232, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 10962, "cl": 31, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11228, "cl": 23, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 147, "cl": 17, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11388, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 819, "cl": 9, "fl": "../Modules/faulthandler.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 104, "cl": 21, "fl": "../Objects/mimalloc/alloc-posix.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 14157, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 247, "cl": 10, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2543, "cl": 15, "fl": "../Objects/listobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 577, "cl": 5, "fl": "../Parser/pegen.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11891, "cl": 28, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 331, "cl": 21, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6913, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 241, "cl": 9, "fl": "../Objects/fileobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 281, "cl": 119, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1239, "cl": 17, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 775, "cl": 17, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 13072, "cl": 29, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2753, "cl": 17, "fl": "../Objects/object.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 728, "cl": 23, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 890, "cl": 5, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 331, "cl": 40, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2009, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 14741, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8032, "cl": 14, "fl": "../Objects/unicodeobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 61, "cl": 9, "fl": "../Parser/myreadline.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 91, "cl": 31, "fl": "../Python/qsbr.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 330, "cl": 40, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 12223, "cl": 29, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 389, "cl": 5, "fl": "../Python/ceval_gil.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 560, "cl": 14, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 250, "cl": 5, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1396, "cl": 20, "fl": "../Objects/codeobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9195, "cl": 21, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 122, "cl": 26, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 37, "cl": 13, "fl": "../Include/internal/pycore_pymath.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2119, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1366, "cl": 13, "fl": "../Python/pytime.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 393, "cl": 9, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9788, "cl": 25, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 394, "cl": 5, "fl": "../Objects/mimalloc/arena.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1580, "cl": 28, "fl": "../Python/initconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9723, "cl": 25, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 12171, "cl": 25, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 808, "cl": 22, "fl": "../Modules/faulthandler.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2086, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 293, "cl": 9, "fl": "../Python/mystrtoul.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 15357, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1893, "cl": 15, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 3955, "cl": 26, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 213, "cl": 9, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7287, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6032, "cl": 12, "fl": "../Objects/longobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 549, "cl": 5, "fl": "../Python/preconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1093, "cl": 23, "fl": "../Python/getargs.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1823, "cl": 17, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7904, "cl": 23, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9859, "cl": 25, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 555, "cl": 9, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11280, "cl": 23, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 202, "cl": 13, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7129, "cl": 17, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1556, "cl": 17, "fl": "../Python/initconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 321, "cl": 14, "fl": "../Python/pystrtod.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1902, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1578, "cl": 5, "fl": "../Python/initconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1877, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 15349, "cl": 23, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 196, "cl": 19, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8170, "cl": 18, "fl": "../Python/Python-ast.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 41, "cl": 9, "fl": "../Include/internal/pycore_pymath.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 399, "cl": 19, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 13606, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11226, "cl": 23, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 12503, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 13404, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 117, "cl": 9, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 842, "cl": 9, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 839, "cl": 19, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 140, "cl": 13, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 35, "cl": 9, "fl": "../Include/internal/pycore_pymath.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 12292, "cl": 29, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1908, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 328, "cl": 5, "fl": "../Modules/faulthandler.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 54, "cl": 14, "fl": "../Include/internal/pycore_pymath.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 12550, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 6924, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1990, "cl": 9, "fl": "../Modules/_io/bufferedio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1527, "cl": 13, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 976, "cl": 9, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11931, "cl": 26, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 306, "cl": 5, "fl": "../Python/pystrtod.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1824, "cl": 23, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 330, "cl": 21, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2082, "cl": 5, "fl": "../Python/dtoa.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 51, "cl": 13, "fl": "../Include/internal/pycore_pymath.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 369, "cl": 5, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 12006, "cl": 28, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1831, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 326, "cl": 52, "fl": "../Modules/main.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 421, "cl": 9, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2071, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11384, "cl": 23, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1042, "cl": 9, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 289, "cl": 22, "fl": "../Modules/faulthandler.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 12394, "cl": 29, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 403, "cl": 38, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 67, "cl": 19, "fl": "../Parser/myreadline.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 582, "cl": 22, "fl": "../Parser/pegen.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1969, "cl": 19, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 472, "cl": 29, "fl": "../Python/thread_pthread.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 476, "cl": 13, "fl": "../Modules/_io/fileio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 13603, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 316, "cl": 5, "fl": "../Python/pylifecycle.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 3508, "cl": 32, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1976, "cl": 13, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 455, "cl": 31, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2080, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2092, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 656, "cl": 9, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7115, "cl": 21, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2135, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 525, "cl": 9, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 417, "cl": 26, "fl": "../Modules/main.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1978, "cl": 9, "fl": "../Modules/_io/bufferedio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 326, "cl": 68, "fl": "../Modules/main.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 150, "cl": 36, "fl": "../Python/bootstrap_hash.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 16262, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 16129, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11101, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1993, "cl": 19, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 13412, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 12102, "cl": 25, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 13377, "cl": 24, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1047, "cl": 27, "fl": "../Python/getargs.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11789, "cl": 21, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11701, "cl": 26, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 11641, "cl": 25, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9200, "cl": 13, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 5609, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 62, "cl": 26, "fl": "../Modules/_sre/sre.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1110, "cl": 10, "fl": "../Objects/stringlib/unicode_format.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 130, "cl": 18, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 10381, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 273, "cl": 5, "fl": "../Python/pylifecycle.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 182, "cl": 13, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 212, "cl": 17, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 199, "cl": 29, "fl": "../Python/pylifecycle.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 220, "cl": 9, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1986, "cl": 23, "fl": "../Python/initconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2824, "cl": 15, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 810, "cl": 23, "fl": "../Python/preconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 295, "cl": 38, "fl": "../Python/pylifecycle.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2834, "cl": 13, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2811, "cl": 18, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 160, "cl": 18, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 829, "cl": 9, "fl": "../Python/preconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 304, "cl": 21, "fl": "../Python/pylifecycle.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 260, "cl": 5, "fl": "../Python/pylifecycle.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 971, "cl": 9, "fl": "../Python/preconfig.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 635, "cl": 35, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 673, "cl": 35, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 523, "cl": 5, "fl": "../Objects/complexobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 708, "cl": 28, "fl": "../Python/formatter_unicode.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 173, "cl": 15, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 654, "cl": 35, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 824, "cl": 22, "fl": "../Modules/faulthandler.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1606, "cl": 9, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 4411, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 3601, "cl": 26, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9538, "cl": 14, "fl": "../Python/Python-ast.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8160, "cl": 18, "fl": "../Python/Python-ast.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 836, "cl": 5, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 423, "cl": 13, "fl": "../Modules/_localemodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 298, "cl": 17, "fl": "../Modules/pwdmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 795, "cl": 11, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 9207, "cl": 5, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 985, "cl": 5, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 40, "cl": 14, "fl": "../Include/internal/pycore_pymath.h" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 795, "cl": 28, "fl": "../Objects/mimalloc/prim/unix/prim.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 989, "cl": 9, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1566, "cl": 27, "fl": "../Modules/_operator.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8131, "cl": 18, "fl": "../Python/Python-ast.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 101, "cl": 5, "fl": "../Python/pystrtod.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1288, "cl": 9, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1346, "cl": 9, "fl": "../Python/fileutils.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1367, "cl": 13, "fl": "../Python/pytime.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 8506, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 640, "cl": 28, "fl": "../Modules/_io/stringio.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 7032, "cl": 9, "fl": "../Modules/posixmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 2091, "cl": 5, "fl": "../Python/dtoa.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 285, "cl": 31, "fl": "../Python/pylifecycle.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 1612, "cl": 9, "fl": "../Objects/floatobject.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 332, "cl": 46, "fl": "../Modules/signalmodule.c" })
+[1;33m	 NeverFree :[1;0m memory allocation at : ({ "ln": 526, "cl": 5, "fl": "../Modules/timemodule.c" })
